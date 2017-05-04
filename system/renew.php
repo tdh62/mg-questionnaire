@@ -1,0 +1,29 @@
+<?php
+/*********************************************************
+*本程序用于毛概课程问卷
+*作者：tdh62
+*
+*本文件用于：
+*1.重新初始化session而不分配新ID
+*
+*///*******************************************************
+?>
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"></head>
+<?php
+	session_start();
+    $_SESSION['ans1']='';
+    $_SESSION['ans2']='';
+    $_SESSION['ans3']='';
+    $_SESSION['ans4']='';
+    $_SESSION['ans5']='';
+    $_SESSION['ans6']='';
+    $_SESSION['ans7']='';
+    $_SESSION['ans8']='';
+    $_SESSION['ans9']='';
+    $_SESSION['ans10']='';
+    $_SESSION['ans11']='';
+    $_SESSION['ans12']='';
+    $_SESSION['ans13']='';
+	echo'<p>您的问卷已重置，若页面没有自动跳转，请<a href="../index.php">点击此处</a>前往重新填写</p>';
+?>
